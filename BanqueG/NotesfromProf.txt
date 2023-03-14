@@ -1,0 +1,23 @@
+proposition
+
+public String toString(){
+String desc="";
+for(comptebancaire cb:comptes)
+	desc+= cb.toString();
+  return desc;}
+// on peut aussi foreach
+// ListIterator( pour les ArrayList
+// Iterator pour les collections
+public String toString(){
+String desc="";
+ListIterator <comptebancaire> it=ListIterator();
+	while(it.hasNext()) 
+	desc +=it.next().toString();
+  return desc;}
+
+public String toString(){
+String desc="";
+Iterator <comptebancaire> it= Iterator();
+	while(it.hasNext()) 
+	desc +=it.next().toString();
+  return desc;}
